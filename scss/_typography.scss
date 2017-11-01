@@ -1,0 +1,21 @@
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    color: $black;
+    letter-spacing: 0;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p {
+    color: $black;
+    font-family: 'Slabo 27px', serif;
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: -.003em;
+    line-height: 1.58;
+}
