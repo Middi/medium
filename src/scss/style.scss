@@ -3,4 +3,8 @@
 @import "typography";
 @import "layout";
 
-@import "media-queries;
+body {
+    background: red;
+}
+
+@import "media-queries";

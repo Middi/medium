@@ -1,19 +1,62 @@
+var path = require('path');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
+
+var extractPlugin = new ExtractTextPlugin({
+    filename: 'style.css'
+})
+
 module.exports = {
-    entry: './src/app.js',
+    entry: './src/js/app.js',
     output: {
-        path: __dirname + '/dist',
+        path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
     },
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.js$/,
-                exclude: /(node_modules)/,
-                loader: 'babel-loader',
-                query: {
-                    presets:['es2015']
-                }
+                use: [
+                    {
+                        loader: 'babel-loader',
+                        options: {
+                            presets: ['es2015']
+                        }
+                    }
+                ]
+            },
+            {
+                test: /\.scss$/,
+                use: extractPlugin.extract({
+                    use: ['css-loader', 'sass-loader']
+                })
+            },
+            {
+                test: /\.html$/,
+                use: ['html-loader']
+            },
+            {
+                test: /\.(jpg|png)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: '/dist/img/'
+                        }
+                    }
+                ]
             }
         ]
-    }
+    },
+    plugins: [
+        extractPlugin,
+        new HtmlWebpackPlugin({
+            template: 'src/index.html'
+        }),
+        new CopyWebpackPlugin([
+            {from:'src/img', to:'img'} 
+        ])
+    ]
 }
