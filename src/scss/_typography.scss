@@ -19,7 +19,7 @@ h1 {
 p, a {
     color: $black;
     font-family: 'Slabo 27px', serif;
-    font-size: 21px;
+    font-size: 1.3rem;
     letter-spacing: -.003em;
     line-height: 1.58;
     text-rendering:  optimizeLegibility;
@@ -29,7 +29,7 @@ p, a {
 }
 
 .user-link, .user-bio, .user-time {
-    font-size: 15px;
+    font-size: 0.95rem;
     line-height: 20px;
     font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif;
     &:hover {
@@ -39,9 +39,17 @@ p, a {
 
 .user-bio, .user-time {
     margin: 0;
-    font-size: 14px;
+    font-size: 0.9rem;
     color: $grey;
     &:hover {
         text-decoration: none;
     }
+}
+
+
+figcaption {
+    color: $dark-grey;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
 }
