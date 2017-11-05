@@ -8,8 +8,9 @@ $nav-font-color: $black;
 .navigation {
     height: auto;
     width: 100%;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid $brand;
     background-color: white;
+    box-sizing: border-box;
 }
 
 // Container with no padding for navbar
@@ -19,19 +20,13 @@ $nav-font-color: $black;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 8px 20px 4px;
   }
 
 // Logo and branding
 .brand {
-    padding: 6px 0 0 20px;
-    a {
-        margin: 0;
-        padding: 0;
-        line-height: 0;
-    }
-    img {
-        width: 200px;
-    }
+    a {line-height: 0}
+    img {width: 200px}
 }
 
 // Navigation 
@@ -39,12 +34,12 @@ nav {
     ul {
         list-style: none;
         margin: 0;
-        padding: 12px 0;
         li {
             display: inline;
             text-align: center;
+            line-height: 0;
             a, a:visited {
-                padding-left: 20px;
+                line-height: 0;
                 color: $nav-font-color;
                 text-decoration: none;
                 &:hover {color: lighten($nav-font-color, 10)}
@@ -53,3 +48,4 @@ nav {
     }
 }
 
+.nav-user {width: 32px}
