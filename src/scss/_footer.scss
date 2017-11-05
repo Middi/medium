@@ -26,45 +26,55 @@
     padding-bottom: 40px;
     ul {
         list-style: none;
-        max-width: 500px;
+        max-width: 560px;
         text-align: center;
         padding: 0;
         margin: 0 auto;
         font-size: 0;
         box-sizing: border-box;
-        li {
-            border: none;
-            display: inline-block;
-            width: 25%;
-            background: $facebook;
-            box-sizing: border-box;
-            padding: 0;
-            margin: 0;
-            transition: background 200ms ease-in;
-            cursor: pointer;
-            a {
-                color: white
-            }
+        &:hover li {
+            transition: all 0.25s ease-in;
+            opacity: 0.7;
+        }
+    }
+    li {
+        border: none;
+        display: inline-block;
+        width: 25%;
+        box-sizing: border-box;
+        padding: 2px 0;
+        margin: 0;
+        transition: all 0.2s ease-in;
+        cursor: pointer;
+
+        a {color: white}
+
+        &:nth-child(1) {
+            background-color: $facebook;
             &:hover {
-                background: darken($facebook, 10)
+                background-color: saturate($facebook, 10);
+                opacity: 1;
             }
-            &:nth-child(2) {
-                background: $twitter;
-                &:hover {
-                    background: darken($twitter, 10)
-                }
+        }
+        &:nth-child(2) {
+            background-color: $twitter;
+            &:hover {
+                background: saturate($twitter, 10);
+                opacity: 1;
             }
-            &:nth-child(3) {
-                background: $google;
-                &:hover {
-                    background: darken($google, 10)
-                }
+        }
+        &:nth-child(3) {
+            background-color: $google;
+            &:hover {
+                background: saturate($google, 10);
+                opacity: 1;
             }
-            &:nth-child(4) {
-                background: $email;
-                &:hover {
-                    background: darken($email, 10)
-                }
+        }
+        &:nth-child(4) {
+            background-color: $email;
+            &:hover {
+                background: saturate($email, 10);
+                opacity: 1;
             }
         }
     }
@@ -83,7 +93,7 @@
 }
 
 .card {
-    height: 280px;
+    height: 290px;
     width: 317px;
     background: white;
     margin: 6px;
@@ -104,8 +114,8 @@
     }
     &-content {
         box-sizing: border-box;
-        height: 180px;
-        padding: 15px;
+        height: 190px;
+        padding:  15px;
         position: relative;
     }
     &-user {
