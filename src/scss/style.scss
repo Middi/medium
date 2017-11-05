@@ -3,6 +3,11 @@
 @import "typography";
 @import "layout";
 
+// Container with no padding for navbar
+.container {
+    max-width: $content-width;
+    margin: 0 auto;
+  }
 
 
 @import "media-queries";

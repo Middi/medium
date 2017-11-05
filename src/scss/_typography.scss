@@ -3,7 +3,10 @@ h1, h2, h3, h4, h5, h6 {
     color: $black;
     letter-spacing: 0;
     font-weight: 700;
-    font-style: normal;
+    font-style: normal;    
+    text-rendering:  optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing:  grayscale;
 }
 
 h1 {
@@ -17,5 +20,8 @@ p, a {
     font-size: 21px;
     letter-spacing: -.003em;
     line-height: 1.58;
+    text-rendering:  optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing:  grayscale;
 }
 
