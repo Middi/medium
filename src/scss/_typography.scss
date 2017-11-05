@@ -23,5 +23,13 @@ p, a {
     text-rendering:  optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing:  grayscale;
+    text-decoration: none;
 }
 
+.user-link {
+    font-size: 16px;
+    line-height: 20px;
+    &:hover {
+        text-decoration: underline;
+    }
+}

@@ -4,3 +4,15 @@ main {
     margin-top: 60px;
     clear: both;
 }
+
+.container {
+    max-width: 740px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .header-content {
+      padding: 35px 0;
+      border: 1px solid black;
+  }
