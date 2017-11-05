@@ -1,0 +1,7 @@
+.m-10 {
+    margin-left: 10px;
+}
+
+.divider::before {
+    content: '\00B7';
+}

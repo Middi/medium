@@ -26,10 +26,19 @@ p, a {
     text-decoration: none;
 }
 
-.user-link {
+.user-link, .user-bio, .user-time {
     font-size: 16px;
     line-height: 20px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif;
     &:hover {
         text-decoration: underline;
+    }
+}
+
+.user-bio, .user-time {
+    margin: 0;
+    color: $grey;
+    &:hover {
+        text-decoration: none;
     }
 }
