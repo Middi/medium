@@ -16,7 +16,12 @@ h1 {
     margin: .67em 0
 }
 
-p, a {
+h2 {
+    font-size: 1.75em;
+    margin: 2em 0 0;
+}
+
+p, a, li {
     color: $black;
     font-family: 'Slabo 27px', serif;
     font-size: 1.3rem;
@@ -25,13 +30,17 @@ p, a {
     text-rendering:  optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing:  grayscale;
-    text-decoration: none;
+}
+
+p, li, a {
+    font-size: 1.42rem;
 }
 
 .user-link, .user-bio, .user-time {
     font-size: 0.95rem;
     line-height: 20px;
     font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif;
+    text-decoration: none;
     &:hover {
         text-decoration: underline;
     }
@@ -44,6 +53,10 @@ p, a {
     &:hover {
         text-decoration: none;
     }
+}
+
+article li {
+    padding: 10px 0;
 }
 
 

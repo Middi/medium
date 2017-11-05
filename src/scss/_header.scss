@@ -8,8 +8,6 @@ $nav-font-color: $black;
 .navigation {
     height: auto;
     width: 100%;
-    position: absolute;
-    top: 0;
     border-bottom: 2px solid black;
     background-color: white;
 }
@@ -18,36 +16,35 @@ $nav-font-color: $black;
 .header-container {
     max-width: $content-width;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
 // Logo and branding
 .brand {
-    position: absolute;
-    padding-left: 20px;
-    float: left;
-    line-height: $nav-height;
-    font-size: 1.4em;
-    a, a:visited {
-        color: $nav-font-color;
-        text-decoration: none;
+    padding: 6px 0 0 20px;
+    a {
+        margin: 0;
+        padding: 0;
+        line-height: 0;
+    }
+    img {
+        width: 200px;
     }
 }
 
 // Navigation 
 nav {
-    float: right;
     ul {
         list-style: none;
         margin: 0;
-        padding: 0;
+        padding: 12px 0;
         li {
-            float: left;
-            position: relative;
+            display: inline;
             text-align: center;
             a, a:visited {
-                display: block;
-                padding: 0 20px;
-                line-height: $nav-height;
+                padding-left: 20px;
                 color: $nav-font-color;
                 text-decoration: none;
                 &:hover {color: lighten($nav-font-color, 10)}
@@ -56,73 +53,3 @@ nav {
     }
 }
 
-
-/* Mobile navigation */
-
-// Binds to JS Toggle
-.nav-mobile {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: $nav-height;
-}
-
-
-#nav-toggle {
-    position: absolute;
-    top: 12px;
-    z-index: 2;
-    cursor: pointer;
-    padding: 12px 35px 16px 0px;
-    span, span:before, span:after {
-        cursor: pointer;
-        border-radius: 1px;
-        height: 4px;
-        width: 35px;
-        background: $nav-font-color;
-        position: absolute;
-        display: block;
-        content: '';
-        transition: all 300ms ease-in-out;
-    }
-
-    span:before {top: -9px}
-    span:after {bottom: -9px}
-
-    &.active span {
-        background-color: transparent;
-        &:before, &:after {top: 0}
-        &:before {transform: rotate(45deg)}
-        &:after {transform: rotate(-45deg)}
-    }
-}
-
-@media only screen and (max-width: $breakpoint) {
-    // Hamburger nav visible on mobile only
-    .nav-mobile {display: block}
-
-    .brand { line-height: 48px}
-
-    nav {
-        width: 100%;
-        padding: 24px 0;
-        ul {
-            display: none;
-            li {
-                float: none;
-                a {
-                    padding: 15px;
-                    line-height: 20px;
-                }
-                ul li a {padding-left: 30px}
-            }
-        }
-    }
-}
-
-@media screen and (min-width: $breakpoint) {
-
-.nav-list {display: block !important}
-
-}

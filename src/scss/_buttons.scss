@@ -8,6 +8,7 @@
     box-sizing: border-box;
     line-height: 18px;
     color: $brand;
+    text-decoration: none;
     &:hover {
         color: darken($brand, 10);
         border-color: darken($brand, 10);
