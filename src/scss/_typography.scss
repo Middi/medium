@@ -11,10 +11,11 @@ h1 {
     margin: .67em 0
 }
 
-p {
+p, a {
     color: $black;
     font-family: 'Slabo 27px', serif;
     font-size: 21px;
     letter-spacing: -.003em;
     line-height: 1.58;
 }
+
