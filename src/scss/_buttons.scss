@@ -1,11 +1,15 @@
 .follow-btn {
-    border: 1px solid red;
-    font-size: 15px;
+    border: 1px solid $brand;
+    font-size: 13px;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 200;
+    font-weight: 400;
     border-radius: 4px;
-    padding-left: 10px;
-    padding-right: 10px;
-    line-height: 17px;
-    height: 19px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    line-height: 18px;
+    color: $brand;
+    &:hover {
+        color: darken($brand, 10);
+        border-color: darken($brand, 10);
+    }
 }
