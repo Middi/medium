@@ -1,3 +1,10 @@
+hr {
+    border: 0;
+    height: 1px;
+    background-color: lighten($grey , 80);
+    margin-bottom: 30px;
+}
+
 .m-10 {
     margin-left: 10px;
 }
