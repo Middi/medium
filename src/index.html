@@ -22,12 +22,17 @@
                 </a>
             </div>
             <nav>
-                <div class="nav-mobile">
-                    <a id="nav-toggle" href="#!">
-                        <span></span>
-                    </a>
-                </div>
                 <ul class="nav-list">
+                        <li>
+                                <a href="#" class="footer-social-facebook">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-social-twitter">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </li>
                     <li>
                         <a href="#!">
                             <img class="nav-user" src="./img/comic-100.png" alt="user">
@@ -202,9 +207,19 @@
                 <div class="response-heading">
                     <h5>Responses</h5>
                 </div>
-                <div class="response-box">
-                    <img src="./img/comic-100.png" alt="avatar">
-                    <p>Write a response...</p>
+                <div id="write-comment" class="response-box">
+                    <div class="response-box-click">
+                        <img src="./img/comic-100.png" alt="avatar">
+                        <div class="reponse-box-comment">
+                            <p id="write-response" class="write-response">Write a response...</p>
+                            <p id="response-user" class="response-user user-name">Richard Middleton</p>
+                        </div>
+                    </div>
+                    <div class="text-area-div">
+                        <textarea name="comment" class="text-area" id="text-area" cols="30" rows="10"></textarea>
+                        <a href="#" class="btn btn-submit">Submit</a>
+                    </div>
+                    
                 </div>
                 <div class="comment">
                     <div class="comment-user">

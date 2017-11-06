@@ -35,9 +35,8 @@ nav {
         li {
             display: inline;
             text-align: center;
-            line-height: 0;
+            padding-left: 12px;
             a, a:visited {
-                line-height: 0;
                 color: $black;
                 text-decoration: none;
                 &:hover {color: lighten($black, 10)}
@@ -46,4 +45,16 @@ nav {
     }
 }
 
-.nav-user {width: 32px}
+.nav-user {
+    width: 32px;
+    vertical-align: middle;
+}
+
+nav .fa {
+    color: $grey;
+    font-size: 21px;
+    vertical-align: middle;
+    &:hover {
+        color: $dark-grey;
+    }
+}

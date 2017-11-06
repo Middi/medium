@@ -14,3 +14,19 @@
         border-color: darken($brand, 10);
     }
 }
+
+.btn {
+    border: 1px solid $brand;
+    font-size: .85rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    border-radius: 4px;
+    padding: 8px 16px;
+    box-sizing: border-box;
+    color: $brand;
+    text-decoration: none;
+    &:hover {
+        color: darken($brand, 10);
+        border-color: darken($brand, 10);
+    }
+}

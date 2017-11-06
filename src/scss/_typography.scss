@@ -32,7 +32,7 @@ h5 {
     line-height: 24px;
 }
 
-p, a, li {
+p, a, li, textarea {
     color: $black;
     font-family: 'Slabo 27px', serif;
     font-size: 1.3rem;
@@ -43,7 +43,13 @@ p, a, li {
     -moz-osx-font-smoothing:  grayscale;
 }
 
-p, li, a {
+textarea {
+    font-size: 1.15rem;
+    letter-spacing: -.003em;
+    line-height: 1.3;
+}
+
+p, li, a,  {
     font-size: 1.42rem;
 }
 
@@ -72,7 +78,7 @@ p, li, a {
 }
 
 article li {
-    padding: 10px 0;
+    padding: 6px 0;
 }
 
 
