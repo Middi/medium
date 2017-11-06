@@ -30,6 +30,7 @@ $(function () {
 
   $('#mimg').click(function (e) {    // Used to stop the event bubbling..
     e.stopImmediatePropagation();
+    $('img').css('cursor', 'zoom-in');
     $('#modal').fadeOut(400);
   });
 
@@ -38,6 +39,7 @@ $(function () {
       e.stopPropagation();
       var sr=$(this).attr('src'); 
       $('#mimg').attr('src',sr);
+      $('img').css('cursor', 'zoom-out');
       $('#modal').fadeIn(400);
 
   });
