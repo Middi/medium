@@ -1,8 +1,6 @@
 // Navigation Variables
 $content-width: 1000px;
 $breakpoint: 600px;
-$nav-height: 50px;
-$nav-font-color: $black;
 
 // Outer navigation wrapper
 .navigation {
@@ -20,7 +18,7 @@ $nav-font-color: $black;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 8px 20px 4px;
+    padding: 10px 20px 6px;
   }
 
 // Logo and branding
@@ -40,9 +38,9 @@ nav {
             line-height: 0;
             a, a:visited {
                 line-height: 0;
-                color: $nav-font-color;
+                color: $black;
                 text-decoration: none;
-                &:hover {color: lighten($nav-font-color, 10)}
+                &:hover {color: lighten($black, 10)}
             }
         }
     }
