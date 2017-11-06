@@ -1,39 +1,30 @@
 @media only screen and (max-width: 845px) {
-    html {
-        font-size: 15px;
-    }
-    .card-container {
-        flex-wrap: wrap
-    }
+
+    html {font-size: 15px}
+    .card-container {flex-wrap: wrap}
+    .user {padding: 0 15px}
+
     .card {
         width: 90%;
         height: 340px;
-        &-image {
-            height: 180px
-        }
-        &-content {
-            height: 160px
-        }
-    }
-    .user {
-        padding: 0 15px
+        &-image {height: 180px}
+        &-content {height: 160px}
     }
 }
 
 @media only screen and (max-width: 645px) {
-    html {
-        font-size: 14px
-    }
+
+    html {font-size: 14px}
 }
 
 @media only screen and (max-width: 550px) {
-    html {
-        font-size: 13.5px
+    
+    html {font-size: 13.5px}
+    h1 {margin: .35em 0 .57em 0}
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
     }
-    .header-content {
-        margin-top: 10px;
-    }
-    .header-content-avatar img {
-        width: 40px;
-    }
+    .header-content {margin-top: 10px}
+    .header-content-avatar img {width: 40px}
 }
