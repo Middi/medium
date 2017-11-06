@@ -1,11 +1,10 @@
 .tags {
     list-style: none;
     margin-bottom: 40px;
-    padding: 0;
+    padding: 0 15px;
     li {
         display: inline;
-        a,
-        a:visited {
+        a, a:visited {
             background: $light-grey;
             padding: 2px 12px;
             border-radius: 2px;
@@ -101,6 +100,7 @@
     border-radius: 4px;
     border: 1px solid rgba(0, 0, 0, .04);
     box-sizing: border-box;
+    margin-bottom: 20px;
     a {
         text-decoration: none
     }
