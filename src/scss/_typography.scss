@@ -43,7 +43,7 @@ p, li, a {
     font-size: 1.42rem;
 }
 
-.user-link, .user-bio, .user-time, .card-content-tagged, .card-user-name, .card-user-time {
+.user-link, .user-bio, .card-content-tagged, .user-name, .user-time {
     font-size: 0.95rem;
     line-height: 20px;
     font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif;
@@ -53,7 +53,7 @@ p, li, a {
     }
 }
 
-.user-bio, .user-time, .card-content-tagged, .card-user-time {
+.user-bio, .user-time, .card-content-tagged {
     margin: 0;
     font-size: 0.9rem;
     color: $grey;
@@ -62,7 +62,7 @@ p, li, a {
     }
 }
 
-.card-user-name, .card-user-time {
+.user-time, .user-name {
     margin: 0;
     line-height: 1.3;
 }
