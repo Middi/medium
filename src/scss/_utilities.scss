@@ -13,3 +13,7 @@ hr {
 .divider::before {
     content: '\00B7';
 }
+
+.avatar {
+    pointer-events: none;
+}

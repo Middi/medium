@@ -14,7 +14,7 @@ $(function () {
   $('#write-comment').click(function (e) {
 
     // Used to stop the event bubbling..
-    e.stopPropagation()
+    e.stopPropagation();
     $('.text-area-div').slideDown('slow');
     write.fadeOut(200, complete);
     $('.text-area').focus();
@@ -24,6 +24,22 @@ $(function () {
   $(document).click(function () {
     $('.text-area-div').slideUp('slow');
     user.fadeOut(200, completeOut);
+    $('#modal').fadeOut(400);
+  });
+
+
+  $('#mimg').click(function (e) {    // Used to stop the event bubbling..
+    e.stopImmediatePropagation();
+    $('#modal').fadeOut(400);
+  });
+
+
+  $('img').on('click',function(e) {// Used to stop the event bubbling..
+      e.stopPropagation();
+      var sr=$(this).attr('src'); 
+      $('#mimg').attr('src',sr);
+      $('#modal').fadeIn(400);
+
   });
 
 });
