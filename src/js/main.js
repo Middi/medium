@@ -27,6 +27,16 @@ $(function () {
     $('#modal').fadeOut(400);
   });
 
+  $('#footer-grey').click(function () {
+    $('.text-area-div').slideUp('slow');
+    user.fadeOut(200, completeOut);
+  });
+
+
+  $('#modal').click(function () {
+    $('#modal').fadeOut(400);
+  });
+
 
   $('#mimg').click(function (e) {    // Used to stop the event bubbling..
     e.stopImmediatePropagation();
@@ -35,12 +45,12 @@ $(function () {
   });
 
 
-  $('img').on('click',function(e) {// Used to stop the event bubbling..
-      e.stopPropagation();
-      var sr=$(this).attr('src'); 
-      $('#mimg').attr('src',sr);
-      $('img').css('cursor', 'zoom-out');
-      $('#modal').fadeIn(400);
+  $('img').on('click', function (e) {// Used to stop the event bubbling..
+    e.stopPropagation();
+    var sr = $(this).attr('src');
+    $('#mimg').attr('src', sr);
+    $('img').css('cursor', 'zoom-out');
+    $('#modal').fadeIn(400);
 
   });
 
