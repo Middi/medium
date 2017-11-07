@@ -11,6 +11,7 @@ $(function () {
         $('#modal').fadeOut(400);
     });
 
+    // get image 
     $('img').on('click', function (e) {
         e.stopPropagation();
         // get src of image
