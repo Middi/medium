@@ -35,4 +35,34 @@ figure {
     img {width: 100%}
 }
 
+
+.blog-list {
+    .card {
+        border: 1px solid rgba(0, 0, 0, .1);
+    }
+}
+
+
+.featured-container {
+    max-width: 1200px;
+    margin: 60px auto;
+}
+.featured {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+    padding: 30px;
+    &-article {
+        border: 2px solid red;
+        height: 400px;
+    }
+    &-list {
+        border: 2px solid blue;
+    }
+ }
+
+
 @import "footer";

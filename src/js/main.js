@@ -8,6 +8,7 @@ $(function () {
   function complete() {
     user.fadeIn(300);
   };
+  
   // write response fade in
   function completeOut() {
     write.fadeIn(300);
@@ -26,6 +27,7 @@ $(function () {
     $('.text-area-div').slideUp('slow');
     user.fadeOut(200, completeOut);
   });
+
   // hide the "text-area-div" by clicking on section for mobile
   $('#footer-grey').click(function () {
     $('.text-area-div').slideUp('slow');
