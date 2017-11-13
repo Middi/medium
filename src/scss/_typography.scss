@@ -25,10 +25,17 @@ h2 {
     margin: 2em 0 0;
 }
 
+h4 {
+    font-size: 1em;
+    margin: .25em 0;
+    letter-spacing: -0.28px;
+    line-height: 24px;
+}
+
 h5 {
     font-size: .8em;
-    margin: 0.4em 0 0;
-    letter-spacing: -0.28999999165534973px;
+    margin: .4em 0 0;
+    letter-spacing: -0.28px;
     line-height: 24px;
 }
 
@@ -86,4 +93,10 @@ figcaption {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 0.8rem;
+}
+
+
+.featured-heading {
+    font-weight: 400;
+    margin: 0;
 }

@@ -9,8 +9,9 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Slabo+27px" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         crossorigin="anonymous">
-        
-        <link href="style.css" rel="stylesheet"></head> 
+
+    <link href="style.css" rel="stylesheet">
+</head>
 
 </head>
 
@@ -45,12 +46,77 @@
         </div>
     </div>
     <main>
-        <div class="featured-container">
-        <section class="featured">
-            <div class="featured-article"></div>
-            <div class="featured-list"></div>
+        <section class="featured-container">
+            <div class="featured-grid">
+                <div class="featured-card">
+                    <a href="#">
+                        <div class="featured-card-image"></div>
+                        <div class="featured-card-content">
+                            <p class="card-content-tagged">
+                                Featured
+                            </p>
+                            <h4>10 Things I Took Away From Invision Studio’s Demo</h4>
+                            <div class="featured-card-user">
+                                <img class="avatar" src="./assets/img/comic-100.png" alt="user">
+                                <div class="featured-card-user-info">
+                                    <p class="user-name">Richard Middleton</p>
+                                    <p class="user-time">4 min read</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+
+                <ul class="featured-list">
+                    <li>
+                        <h4 class="featured-heading">Latest</h4>
+                    </li>
+                    <hr>
+                    <li>
+                        <div class="featured-list-header"></div>
+                        <div class="featured-list-info">
+                            <h5>Best Herbal Teas, Ever.</h5>
+                            <p class="user-name">Richard Middleton</p>
+                            <p class="user-time">
+                                Oct 17
+                                <span class="divider"></span> 11 min read
+                            </p>
+                        </div>
+
+                    </li>
+                    <hr>
+                    <li>
+                        <div class="featured-list-header"></div>
+                        <div class="featured-list-info">
+                            <h5>Best Herbal Teas, Ever.</h5>
+                            <p class="user-name">Richard Middleton</p>
+                            <p class="user-time">
+                                Oct 17
+                                <span class="divider"></span> 11 min read
+                            </p>
+                        </div>
+
+                    </li>
+                    <hr>
+                    <li>
+                        <div class="featured-list-header"></div>
+                        <div class="featured-list-info">
+                            <h5>Best Herbal Teas, Ever.</h5>
+                            <p class="user-name">Richard Middleton</p>
+                            <p class="user-time">
+                                Oct 17
+                                <span class="divider"></span> 11 min read
+                            </p>
+                        </div>
+
+                    </li>
+
+                </ul>
+
+            </div>
         </section>
-    </div>
+
         <section class="blog-list">
             <div class="card-container">
                 <div class="card">
@@ -62,7 +128,7 @@
                             </p>
                             <h5>10 Things I Took Away From Invision Studio’s Demo</h5>
                             <div class="user">
-                                <img  class="avatar" src="./assets/img/comic-100.png" alt="user">
+                                <img class="avatar" src="./assets/img/comic-100.png" alt="user">
                                 <div class="user-info">
                                     <p class="user-name">Richard Middleton</p>
                                     <p class="user-time">4 min read</p>
@@ -81,7 +147,7 @@
                             </p>
                             <h5>10 Things I Took Away From Invision Studio’s Demo</h5>
                             <div class="user">
-                                <img  class="avatar" src="./assets/img/comic-100.png" alt="user">
+                                <img class="avatar" src="./assets/img/comic-100.png" alt="user">
                                 <div class="user-info">
                                     <p class="user-name">Richard Middleton</p>
                                     <p class="user-time">4 min read</p>
@@ -100,7 +166,7 @@
                             </p>
                             <h5>10 Things I Took Away From Invision Studio’s Demo</h5>
                             <div class="user">
-                                <img  class="avatar" src="./assets/img/comic-100.png" alt="user">
+                                <img class="avatar" src="./assets/img/comic-100.png" alt="user">
                                 <div class="user-info">
                                     <p class="user-name">Richard Middleton</p>
                                     <p class="user-time">4 min read</p>
@@ -114,15 +180,15 @@
         </section>
 
 
-    <!-- Modal -->
-    <div id="modal" class="modal">
-        <div class="modal-inner">
-            <img class="modal-image" id="mimg" src="">
+        <!-- Modal -->
+        <div id="modal" class="modal">
+            <div class="modal-inner">
+                <img class="modal-image" id="mimg" src="">
+            </div>
         </div>
-    </div>
-    <!-- /.modal -->
+        <!-- /.modal -->
 
-    <script type="text/javascript" src="bundle.js"></script>
+        <script type="text/javascript" src="bundle.js"></script>
 
 </body>
 

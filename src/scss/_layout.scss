@@ -42,26 +42,89 @@ figure {
     }
 }
 
-
-.featured-container {
-    max-width: 1200px;
-    margin: 60px auto;
-}
-.featured {
+.featured-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-template-rows: 1fr;
     justify-items: stretch;
     align-items: stretch;
-    padding: 30px;
-    &-article {
-        border: 2px solid red;
-        height: 400px;
+    margin: 0;
+    padding: 0 15px;
+    grid-column-gap: 15px;
+    margin-top: 40px;
+}
+
+.featured {
+    &-container {
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+    &-card {
+        height: 425px;
+        position: relative;
+        box-shadow: 0 1px 7px rgba(0, 0, 0, .05);
+        border-radius: 4px;
+        border: 1px solid rgba(0, 0, 0, .1);
+        box-sizing: border-box;
+
+        &-image {
+            height: 280px;
+            background-image: url('../img/hero.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center top;
+        }
+        &-content {
+            box-sizing: border-box;
+            padding: 10px 15px;
+        }
+        &-user {
+            display: flex;
+            box-sizing: border-box;
+            justify-content: flex-start;
+            align-items: center;
+            position: absolute;
+            bottom: 0;
+            padding: 15px;
+            left: 0;
+            height: 64px;
+            width: 100%;
+            border-top: 1px solid lighten($grey, 90);
+            img {
+                width: 36px;
+            }
+            &-info {
+                padding: 0 10px;
+            }
+        }
     }
     &-list {
-        border: 2px solid blue;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+            list-style: none;
+            height: 490px;
+            li {
+                display: flex;
+                align-items: center;
+                h5 {
+                    margin-top: 0;
+                }
+            }
+            &-header {
+                height: 60px;
+                width: 80px;
+                background-image: url('../img/hero-2.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center top;
+            }
+            &-info {
+
+                padding: 0 10px;
+            }
     }
+
  }
 
 
